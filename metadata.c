@@ -115,6 +115,7 @@ void metadata_write(void) {
 }
 
 void metadata_cover_image(const char *buf, int len, const char *ext) {
+    return; // disable cover image writes
     if (!config.meta_dir)
         return;
 
